@@ -1,0 +1,12 @@
+{% extends './base.html' %}
+
+{% block content %}
+
+{% for poll in polls %}
+
+<p>{{ poll.pk }}. {{ poll.title }}</p>
+<h1>Header</h1>
+
+{% endfor %}
+
+{% endblock %}
